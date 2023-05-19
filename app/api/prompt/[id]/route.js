@@ -39,7 +39,7 @@ export const PATCH = async (request, { params }) => {
 	}
 };
 // Delete TO delete
-export const DELETE = async ({ params }) => {
+export const DELETE = async (request, { params }) => {
 	try {
 		await ConnectDB();
 
@@ -47,6 +47,8 @@ export const DELETE = async ({ params }) => {
 
 		return new Response('Prompt deleted', { status: 200 });
 	} catch (error) {
-		return new Response('Failed to delete prompt', { status: 500 });
+		return new Response(`Failed to delete prompt.`, {
+			status: 500,
+		});
 	}
 };
