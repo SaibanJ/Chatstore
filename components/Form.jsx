@@ -4,12 +4,10 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
 	return (
 		<section className='w-full max-w-full flex-start flex-col'>
 			<h1 className='head_text text-left'>
-				<span className='blue_gradient'>{type} Post</span>
+				<span className='blue_gradient'>{type} Topic</span>
 			</h1>
 			<p className='desc text-left max-w-md'>
-				{type} Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Cupiditate commodi similique ab excepturi quos dolore quisquam nam
-				inventore totam eaque!
+				{type} or add to a topic of your choosing!
 			</p>
 			<form
 				onSubmit={handleSubmit}
@@ -17,13 +15,13 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
 			>
 				<label>
 					<span className='font-satoshi font-semibold text-base text-gray-700'>
-						Your AI prompt
+						Your Related Bible Verse
 					</span>
 
 					<textarea
 						value={post.prompt}
 						onChange={(e) => setPost({ ...post, prompt: e.target.value })}
-						placeholder='write your prompt here...'
+						placeholder='Write the verse here...'
 						required
 						className='form_textarea'
 					/>
@@ -31,10 +29,10 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
 
 				<label>
 					<span className='font-satoshi font-semibold text-base text-gray-700'>
-						Tag
+						Topic
 						<span className='font-normal'>
 							{' '}
-							(#something, #idea, #bigaleverywarehouse)
+							(#Heaven, #Overcoming, #Prophecy)
 						</span>
 					</span>
 

@@ -6,13 +6,12 @@ const Home = () => {
 			<h1 className='head_text text-center'>
 				Create and Find
 				<br className='max-md:hidden' />
-				<span className='orange_gradient text-center'> ChatGPT Questions</span>
+				<span className='orange_gradient text-center'> Bible Verses</span>
 			</h1>
 			<p className='desc text-center'>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nostrum
-				officiis velit quas repudiandae excepturi repellendus in dolorem labore
-				accusamus. Recusandae qui itaque nisi aliquid ipsa quia blanditiis vel
-				nesciunt?
+				Looking for answers on a Bible subject? Do you need a word of
+				inspiration or encourgment? Browse through various topics to discover
+				answers or create a topic to contribute!
 			</p>
 			<Feed />
 		</section>

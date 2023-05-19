@@ -30,7 +30,7 @@ const Nav = () => {
 					height={30}
 					className='object-contain'
 				/>
-				<p className='logo_text'>GPT4U</p>
+				<p className='logo_text'>BibleScope</p>
 			</Link>
 
 			{/* desktop nav*/}
@@ -39,7 +39,7 @@ const Nav = () => {
 				{session?.user ? (
 					<div className='flex gap-3 md:gap-5'>
 						<Link href='/create-prompt' className='black_btn'>
-							Create Post
+							Create Topic
 						</Link>
 
 						<button type='button' onClick={signOut} className='outline_btn'>
@@ -107,7 +107,7 @@ const Nav = () => {
 										setToggleDropDown(false);
 									}}
 								>
-									Create Prompt
+									Create Topic
 								</Link>
 
 								<button

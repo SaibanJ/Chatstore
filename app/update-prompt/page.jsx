@@ -35,7 +35,7 @@ const EditPrompt = () => {
 
 		setSubmitting(true);
 
-		if (!promptId) return alert('PromptId was not found');
+		if (!promptId) return alert('verse was not found');
 
 		try {
 			const response = await fetch(`/api/prompt/${promptId}`, {

@@ -3,8 +3,8 @@ import Nav from '@components/Nav';
 import Provider from '@components/Provider';
 
 export const metadata = {
-	title: 'Promptopia',
-	description: 'Discover & share AI Promps',
+	title: 'BibleScope',
+	description: 'Create and Share Bible verses',
 };
 const RootLayout = ({ children }) => {
 	return (
